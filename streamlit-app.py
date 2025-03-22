@@ -5,7 +5,7 @@ import joblib
 import tensorflow as tf
 
 # Load the saved Keras model
-model = tf.keras.models.load_model("carbon_footprint_model")
+model = tf.keras.models.load_model("carbon_footprint_model.h5")
 st.write("✅ Model Loaded Successfully!")
 
 # Now you can use `model.predict()` with user inputs
