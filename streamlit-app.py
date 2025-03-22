@@ -1,10 +1,15 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import joblib  # Assuming you're using a saved model
+import joblib  
+import tensorflow as tf
 
-# Load the trained model (ensure the correct path)
-model = joblib.load("carbon_footprint_model.pkl")  # Replace with actual model file
+# Load the saved Keras model
+model = tf.keras.models.load_model("carbon_footprint_model")
+st.write("✅ Model Loaded Successfully!")
+
+# Now you can use `model.predict()` with user inputs
+
 
 # Streamlit UI
 st.title("Carbon Footprint Calculator")
