@@ -4,6 +4,17 @@ import pandas as pd
 import joblib  
 import tensorflow as tf
 
+st.markdown(
+    """
+    <style>
+    * {
+        font-family: 'Consolas', monospace !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Load the saved Keras model
 try:
     model = tf.keras.models.load_model("carbon_footprint_model.h5")
