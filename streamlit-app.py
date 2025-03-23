@@ -31,7 +31,7 @@ Steps_Walked = st.number_input("Steps walked", min_value=0, max_value=20000, val
 Calories_Burned = st.number_input("Calories burned", min_value=300, max_value=15000, value=0)
 Sleep_Hours = st.number_input("Sleep hours", min_value=0.0, max_value=24.0, value=6.0)
 Social_Media_Hours = st.number_input("Social Media hours", min_value=0.0, max_value=24.0, value=1.0)
-Public_Events_Hours = st.number_input("Public Event Hours", min_value=0.0, max_value=3.0, value=0.0
+Public_Events_Hours = st.number_input("Public Event Hours", min_value=0.0, max_value=3.0, value=0.0)
 
 # Convert categorical inputs
 gender_map = {"Male": 0, "Female": 1, "Other": 2}
