@@ -56,4 +56,4 @@ input_data = np.array([
 # Predict carbon footprint
 if st.button("Submit"):
     prediction = model.predict(input_data)[0]
-    st.success(f"Estimated Carbon Footprint: {prediction:.2f} kgCO2/month")
+    st.success(f"Estimated Carbon Footprint: {float(prediction):.2f} kgCO2/month")
