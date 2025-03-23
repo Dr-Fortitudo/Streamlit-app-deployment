@@ -28,7 +28,7 @@ Entertainment_Hours = st.number_input("Entertainment hours", min_value=0, max_va
 Home_Energy_Consumption_kWh = st.number_input("Home Energy Consumption (kWh)", min_value=0.0, max_value=12.0, value=0.0)
 Charging_Station_Usage = st.number_input("Charging Station Usage", min_value=0, max_value=1, value=0)
 Steps_Walked = st.number_input("Steps walked", min_value=0, max_value=20000, value=0)
-Calories_Burned = st.number_input("Calories burned", min_value=300, max_value=15000, value=0)
+Calories_Burned = st.number_input("Calories burned", min_value=300, max_value=15000, value=300)
 Sleep_Hours = st.number_input("Sleep hours", min_value=0.0, max_value=24.0, value=6.0)
 Social_Media_Hours = st.number_input("Social Media hours", min_value=0.0, max_value=24.0, value=1.0)
 Public_Events_Hours = st.number_input("Public Event Hours", min_value=0.0, max_value=3.0, value=0.0)
