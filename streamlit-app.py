@@ -55,5 +55,14 @@ input_data = np.array([
 
 # Predict carbon footprint
 if st.button("Submit"):
-    prediction = model.predict(input_data)[0]
-    st.write(f"Debug - Prediction type: {type(prediction)}, Value: {prediction}")
+    prediction = model.predict(input_data)  # Get the model's prediction
+
+    # ✅ Ensure prediction is a float before displaying
+    if isinstance(prediction, np.ndarray):  # If it's a NumPy array, extract first element
+        prediction = float(prediction[0])
+    elif isinstance(prediction, list):  # If it's a list, extract first element
+        prediction = float(prediction[0])
+    elif isinstance(prediction, tf.Tensor):  # If it's a TensorFlow tensor, convert to float
+        prediction = float(prediction.numpy().item())
+
+    st.success(f"Estimated Carbon Footprint: {prediction:.2f} kgCO2/month")  # Display result
