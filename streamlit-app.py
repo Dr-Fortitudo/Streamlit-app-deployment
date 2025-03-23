@@ -18,7 +18,6 @@ st.markdown(
 # Load the saved Keras model
 try:
     model = tf.keras.models.load_model("carbon_footprint_model.h5")
-    st.write("✅ Model Loaded Successfully!")
 except Exception as e:
     st.error(f"❌ Error loading model: {e}")
 
